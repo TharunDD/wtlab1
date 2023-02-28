@@ -1,0 +1,141 @@
+<html>
+<head>
+   <title> Desgining a web page</title>
+   <style>
+*{
+  color:white;
+  font-family:"Arial";
+  background-image:none;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+ }
+ body{
+  background: linear-gradient(to top,rgba(0,0,0,0.2)10%,rgba(0,0,0,0.2)10%),url(./pexels-tommes-frites-12618977.jpg);
+  /* background-image: url("pexels-tommes-frites-12618977.jpg"); */
+  background-size: cover;
+ }
+#i1{
+  height:auto;
+  width:557px;
+  margin: 4px;
+  margin-right: 4px;
+  border: 2px solid aqua;
+  border-radius:20px;
+  }
+#i2{
+  margin: 8px;
+  margin-right: 8px;
+  border: 2px solid red;
+  border-radius:20px;
+  height:auto;
+}
+.i3{
+  margin: 19x;
+  margin-top:50px;
+  margin-right: 19px;
+  border: 2px solid aqua;
+  border-radius:20px;
+  margin-bottom:5px;
+  background: none;
+   }
+.c1{
+   color:white;
+   padding:8px;
+   margin: 2px;
+   border-radius: 13px;
+   background:none;
+   }
+#ty{
+ margin-left:40px
+   }
+   button{
+    border-radius: 10px;
+    padding: 5px;
+   }
+   button a{
+     text-decoration: none;
+   }
+  label{
+    background: none;
+  }
+   </style>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+ <center>
+   <div id="i1">
+    <center><h1>The Resume Creater</h1><center>
+        <center>
+        <fieldset>
+        <legend class="i3"><i><b>personal details<b><i></legend>
+         <center>
+          <label>First Name:</label>
+          <input type="text" placeholder="enter your first name" name="" class="c1">
+          <br>
+           <label>Last Name:</label>
+          <input type="text" placeholder="enter your last name" name="" class="c1">
+           <br>
+           <label>Fater name:</label>
+           <input type="text" placeholder="enter your Fater name" name="" class="c1"><br>
+           <label>mother name:</label>
+           <input type="text" placeholder="enter your mother name" name="" class="c1"><br>
+           <label>Email:</label>
+          <input type="email" placeholder="enter your first name" name="" class="c1">
+          <br>
+          <label >Github:</label>
+          <input type="email" placeholder="enter your first name" name="" class="c1"><br>
+           <label>Gender:</label>
+            <input type="radio" id="mal" name="" value="m">
+             <label for="mal">Male</label>
+             <input type="radio" id="html" name="" value="f">
+            <label for="fem">Female</label><br>
+            <label >Date of birth:</label>
+            <input type="date" name="" class="c1" placeholder="select your DOB" color="black">
+        </fieldset>
+        </center>
+    <fieldset>
+        <legend class="i3"><i><b>Academic</b></i></legend>
+        <center>
+            <label >Academic Achivements:</label>
+            <textarea name="" class="c1" cols="30" rows="8" placeholder="enter your achivements"></textarea><br>
+            <label >HSC:</label>
+            <input type="text" placeholder="Enter the school HSC" name="" class="c1"><br>
+            <label >SSLC:</label>
+            <input type="text" placeholder="Enter the school SSLC" name="" class="c1"><br>
+            <label >Upload the image of your project:</label>
+            <input type="file" accept=".jpg">
+            <label >Upload the image of Digital sign:</label>
+            <input type="file" accept=".jpg">
+        </center>
+    </fieldset>
+    <fieldset>
+        <legend class="i3">Knlowedge</legend>
+        <label for="interest">Area of Interest:</label>
+        <select id="interest" name="interest" required>
+          <option value="">Select an option</option>
+          <option value="Front-end Development">Front-end Development</option>
+          <option value="Back-end Development">Back-end Development</option>
+          <option value="Data Science">Data Science</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+          <option value="Other">Other</option>
+        </select><br>
+        <label >Rate ur selected skill level:</label>
+        <input type="range" name="" min="50" max="100"><br>
+        <label for="lan">languages known:</label>
+        <input type="checkbox"  name="vehicle1" id="lan"value="Bike">
+        <label for="vehicle1">c</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> c++</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> java</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">python</label><br>
+
+
+    </fieldset>
+   </div>
+   <button class="btn btn-danger"><a href="./resume.html">Create resume</a></button>
+  </center>
+</center>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+</html>
